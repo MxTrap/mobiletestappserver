@@ -41,6 +41,19 @@ class MainDataClass {
         },
     ])
     }
+
+    getJournal(response){
+        response.json([{
+            subject:"Реализация мобильных приложений",
+            teacher: "Селяничев О. Л.",
+            date:"10-11-2019 10:10:10",
+            studentgroup: "1ПИб-01-41оп",
+            classtype: ["Л.Р."],
+            theme: "Какая-то тема",
+            hours: [2]
+
+        }])
+    }
     getАttendance(jsonArray, response) {
         const data = [
             jsonArray.subject,

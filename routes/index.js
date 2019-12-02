@@ -21,6 +21,10 @@ router.post("/subjects", (req, res, next)=>{
  db.getSubjects(res);
 });
 
+router.post("/journal", (req, res, next)=>{
+    db.getJournal(res);
+});
+
 
 
 module.exports = router;
