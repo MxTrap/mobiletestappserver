@@ -73,7 +73,7 @@ class MainDataClass {
                 //response.json(this.makeAttendanceArray(result));
             })
             .catch(error=>{
-                response.json({
+                response.json([{
                     datetime: ["10-11-2019 10:00:00", "10-11-2019 11:00:00", "10-11-2019 12:00:00", "10-11-2019 13:00:00"],
                     subject: "Реализация мобильных приложений",
                     typeclass: "Л.Р",
@@ -81,7 +81,7 @@ class MainDataClass {
                     name: "Олег",
                     patronymic: "Владимирович",
                     visit: [true, true, false, false]
-                });
+                }]);
                 console.log(error)})
     }
 
