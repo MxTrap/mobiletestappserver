@@ -60,7 +60,8 @@ class User {
                         surname: "admin",
                         name: "admin",
                         patronymic: "admin",
-                        accesslevel: 2
+                        accesslevel: 2,
+                        studentgroup: "1ПИб-01-41оп"
                     });
                     console.log(error);
                 }
