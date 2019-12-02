@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const usersContainer = require('../containers/usersContainer');
 const user = require('../structures/user');
-
+const db =require("../containers/mainDataClass");
 
 
 router.post("/login", (req, res, next)=>{
@@ -17,9 +17,8 @@ router.post("/register", (req, res, next)=>{
     usersContainer.addNewUser(newUser.register(req.body, res));
 });
 
-router.post("/", (req, res, next)=>{
- console.log(usersContainer.allUsers);
- res.json(usersContainer.allUsers);
+router.post("/subjects", (req, res, next)=>{
+ db.getSubjects(res);
 });
 
 

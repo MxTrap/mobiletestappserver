@@ -28,7 +28,21 @@ class MainDataClass {
             .catch(err=>console.log(err));
 
     }
-
+    getSubjects(response){
+    response.json([{
+        subject: "Реализация мобильных приложений",
+        name: "Селяничев",
+        surname: "Олег",
+        patronymic: "Леонидович"
+    },
+        {
+            subject: "Проекитрование БД",
+            name: "Селяничев",
+            surname: "Олег",
+            patronymic: "Леонидович"
+        },
+    ])
+    }
     getАttendance(jsonArray, response) {
         const data = [
             jsonArray.subject,
@@ -45,14 +59,16 @@ class MainDataClass {
 
         this.DBPromiseQuery(query, data)
             .then(result=>{
-                response.json(this.makeAttendanceArray(result));
+                //response.json(this.makeAttendanceArray(result));
             })
-            .catch(error=>console.log(error))
+            .catch(error=>{
+                response.json({
+
+                });
+                console.log(error)})
     }
 
-    getSubject(response){
 
-    }
 
     makeAttendanceArray(array){
 
