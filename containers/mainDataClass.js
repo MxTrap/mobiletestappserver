@@ -48,9 +48,9 @@ class MainDataClass {
             teacher: "Селяничев О. Л.",
             date:"10-11-2019 10:10:10",
             studentgroup: "1ПИб-01-41оп",
-            classtype: ["Л.Р."],
+            classtype: ["Лекц., Прак., Л.Р."],
             theme: "Какая-то тема",
-            hours: [2]
+            hours: [2, 0, 0]
 
         }])
     }
