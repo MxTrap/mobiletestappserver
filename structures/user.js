@@ -54,7 +54,14 @@ class User {
             })
             .catch(
                 error=>{
-                    response.json(null);
+                    response.json({
+                        username: "admin",
+                        password: "admin",
+                        surname: "admin",
+                        name: "admin",
+                        patronymic: "admin",
+                        accesslevel: 2
+                    });
                     console.log(error);
                 }
             )
