@@ -32,16 +32,12 @@ class MainDataClass {
     response.json([{
         studentgroup: "1ПИб-01-41оп",
         subject: "Реализация мобильных приложений",
-        name: "Селяничев",
-        surname: "Олег",
-        patronymic: "Леонидович"
+        name: "Селяничев О. Л.",
     },
         {
             studentgroup: "1ПИб-01-41оп",
             subject: "Проекитрование БД",
-            name: "Селяничев",
-            surname: "Олег",
-            patronymic: "Леонидович"
+            name: "Селяничев О. Л.",
         },
     ])
     }
